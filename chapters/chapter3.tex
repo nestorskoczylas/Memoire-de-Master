@@ -1,0 +1,421 @@
+% Chapter 3
+
+\chapter{Intégration de la Durabilité à Différentes Échelles dans le Développement Logiciel}	%The main chapter title
+\label{pratique-globale}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+La durabilité dans le génie logiciel ne se limite pas aux pratiques individuelles et aux équipes de développement. Ce chapitre explore l'intégration de la durabilité à l'échelle des projets logiciels, des équipes et de la stratégie d'entreprise.
+
+
+Le chapitre se compose de trois sections distinctes, chacune offrant un aperçu des pratiques durables à grande échelle qui façonnent l'avenir du génie logiciel durable. La première section examine les méthodes et les outils pour mettre en œuvre des pratiques durables au niveau des projets logiciels (Section~\ref{sec:pratiques-projets}). La deuxième section explore les initiatives et les actions concrètes pour encourager la durabilité au sein des équipes de développement (Section~\ref{sec:pratiques-equipe}). La dernière section analyse l'alignement de la stratégie de \acrshort{rse} avec les objectifs de durabilité dans le développement logiciel (Section~\ref{sec:rse-durabilite}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Stratégies pour Intégrer la Durabilité dans les Projets Logiciels}
+\label{sec:pratiques-projets}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+La durabilité ne peut être atteinte qu'à travers des projets logiciels bien planifiés et exécutés.
+
+\subsection{Gestion de projet et outils}
+Une gestion de projet efficace et l'adoption d'outils appropriés sont indispensables à la mise en œuvre réussie de pratiques d'ingénierie logicielle écologiques. 
+
+
+L'étude publiée dans l'article "Green Software Engineering with Agile Methods"~\cite{GreenAgileMethods} fait valoir l'intérêt de tirer parti des méthodologies de gestion de projet existantes : \emph{« In order to implement the presented procedure models, the actors in software development projects need to be supported by tools: Besides educational material regarding sustainability issues, specialized software, and spread sheets, these are tools, well-known in the field of software development (e.g. Continuous Integration). »} Ce constat suggère que des pratiques établies telles que l'intégration continue (IC) peuvent être étendues pour intégrer des considérations relatives à la durabilité.
+
+
+La même étude dans~\cite{GreenAgileMethods} précise le potentiel de l'intégration continue pour le développement de logiciels écologiques : \emph{« Using Continuous Integration enables developer teams to minimize their integration effort and their feedback on current software quality. We wanted to use these assets on rating the energy efficiency of software. This is why we developed a model to integrate performance and energy measurement into Continuous Integration. »} En intégrant la mesure de la performance et de l'énergie dans le processus d'intégration continue, les développeurs peuvent recevoir un retour d'information continu sur l'impact environnemental de leur code, ce qui leur permet d'identifier et de corriger les inefficacités tout au long du cycle de développement.
+
+
+La recherche présentée dans "The GREENSOFT Model"~\cite{GreenSoftModel} explore les modèles dédiés au développement de logiciels écologiques. L'étude mentionne le \emph{« Grand Management Information Design »} comme une solution potentielle pour aborder les questions de durabilité lors de la conception et du développement de logiciels. Un examen plus approfondi de ces modèles et de leur application pratique peut fournir des informations précieuses à la communauté des développeurs de logiciels.
+
+
+Si les méthodologies et les outils de gestion de projet existants offrent une base solide, le besoin d'outils spécialisés dans le développement de logiciels écologiques est également évident. Comme indiqué dans cette même étude~\cite{GreenSoftModel}, ces outils peuvent comprendre :
+\begin{itemize}
+    \item Du matériel pédagogique pour sensibiliser les développeurs et leur donner les connaissances nécessaires.
+    \item Des logiciels spécialisés pour mesurer, analyser et optimiser l'efficacité énergétique des logiciels.
+    \item Des tableurs et autres outils de gestion des données pour suivre les progrès et prendre des décisions fondées sur des données.
+\end{itemize}
+
+
+Les chefs de projet et les équipes de développement peuvent être bien équipés pour naviguer dans les complexités de l'ingénierie logicielle écologique et atteindre leurs objectifs de durabilité, grâce à des pratiques de gestion de projet bien établies, à l'intégration de considérations écologiques dans des outils existants tels que l'IC, et à l'exploration et l'adoption d'outils spécialisés dans le développement de logiciels écologiques.
+
+% Gestion de projet et outils
+%~\cite{GreenAgileMethods} "In order to implement the presented procedure models, the actors in software development projects need to be supported by tools: Besides educational material regarding sustainability issues, specialized software, and spread sheets, these are tools, well-known in the field of software development (e.g. Continuous Integration)."
+%~\cite{GreenAgileMethods} "Using Continuous Integration enables developer teams to minimize their integration effort and their feedback on current software quality. We wanted to use these assets on rating the energy efficiency of software. This is why we developed a model to integrate performance and energy measurement into Continuous Integration."
+%~\cite{GreenSoftModel} "Arndt et al. discuss implications of evolving releases of a widely used text processor and relate these to Green IT and SD. As a solution to cope with sustainability issues during software design and development, they propose the so called “Grand Management Information Design”."
+
+\subsection{Mesure et évaluation de la durabilité}
+L'étude d'Albertao et al. dans~\cite{GreenSoftModel} propose de tirer parti des propriétés et des mesures de qualité logicielle établies : \emph{« Albertao et al. interpret common software quality properties and associated metrics on the background of SD. They classify the quality properties into development, usage, and process related properties. »} Les cadres de qualité existants peuvent donc servir de base à l'évaluation de la durabilité des logiciels.
+
+
+Le modèle GREENSOFT se concentre sur les \emph{« Sustainability Criteria and Metrics »}. 
+Ce modèle :
+\begin{enumerate}
+    \item \emph{« classification of criteria and metrics for evaluating a software product’s sustainability »}~\cite{GreenSoftModel}
+    \item \emph{« Three categories of sustainability criteria and metrics for software products: Common Quality Criteria and Metrics, Directly Related Criteria and Metrics, and Indirectly Related Criteria and Metrics. »}~\cite{GreenSoftModel}
+\end{enumerate}
+Cette catégorisation permet de faire la différence entre les mesures de qualité établies et celles qui sont spécifiquement conçues pour évaluer l'impact environnemental d'un produit logiciel.
+
+
+Selon~\cite{SafetySecuritySustainability}, une vision holistique de la durabilité est cruciale : \emph{« Sustainability in software engineering not only encompasses energy efficiency and green IT, but must also consider the second- and third-order impacts of software systems. »} 
+Cette remarque démontre la volonté de prendre en compte l'impact environnemental plus large des logiciels, au-delà de la seule consommation d'énergie.
+
+
+Cette étude propose d'adapter l'\acrfull{acv} à l'ingénierie logicielle : \emph{« For assessment techniques to address quality assurance, we propose evaluating and adapting LCA to software engineering and making use of environmental impact assessment in software engineering. »} 
+L'\acrshort{acv} est une technique utilisée pour évaluer l'impact environnemental d'un produit tout au long de son cycle de vie. 
+L'adaptation de cette approche au développement de logiciels peut fournir des informations précieuses sur l'empreinte environnementale des produits logiciels.
+
+
+Le modèle présenté dans~\cite{IntegrationSustainabilityMetrics} témoigne de l'importance de l'intégration des mesures de durabilité dans la réalisation des projets : \emph{« The proposed model enables the measurement of the sustainability of code, thereby fostering a more comprehensive understanding of the relationship between project delivery performance and sustainable practices. »} 
+Cette intégration a permis aux développeurs et aux chefs de projet d'évaluer l'impact de leurs efforts en matière de développement durable sur les résultats du projet.
+
+
+En s'appuyant sur les cadres de qualité existants, en utilisant le modèle GREENSOFT, en tenant compte des impacts plus larges sur la durabilité, en adaptant éventuellement les techniques d'\acrshort{acv} et en intégrant des mesures de durabilité dans la réalisation des projets, la communauté des développeurs de logiciels peut établir un cadre solide pour mesurer et évaluer l'impact des produits logiciels sur l'environnement.
+
+% Mesure et évaluation de la durabilité
+%~\cite{GreenSoftModel} "Albertao et al. interpret common software quality properties and associated metrics on the background of SD. They classify the quality properties into development, usage, and process related properties."
+%~\cite{GreenSoftModel} "The second part of the GREENSOFT Model is called Sustainability Criteria and Metrics. It covers common metrics and criteria for the measurement of software quality and it allows a classification of criteria and metrics for evaluating a software product’s sustainability."
+%~\cite{GreenSoftModel} "Our model has the ability to represent three categories of sustainability criteria and metrics for software products: Common Quality Criteria and Metrics, Directly Related Criteria and Metrics, and Indirectly Related Criteria and Metrics."
+%~\cite{SafetySecuritySustainability} "Sustainability in software engineering not only encompasses energy efficiency and green IT, but must also consider the second- and third-order impacts of software systems."
+%~\cite{SafetySecuritySustainability} "For assessment techniques to address quality assurance, we propose evaluating and adapting LCA to software engineering and making use of environmental impact assessment in software engineering."
+%~\cite{IntegrationSustainabilityMetrics} "The proposed model enables the measurement of the sustainability of code, thereby fostering a more comprehensive understanding of the relationship between project delivery performance and sustainable practices."
+
+\subsection{Cadres et modèles de durabilité}
+En se basant sur l'accent mis par le modèle GREENSOFT~\cite{GreenSoftModel} sur les critères et les mesures de durabilité (évoqués précédemment), il reconnaît la possibilité de trouver des solutions plus larges : \emph{« Besides reflecting the proposed life cycle of a software product, there are further methods that support software architects, designers, and developers in producing green and sustainable software applications. »} D'où l'existence de cadres supplémentaires qui complètent le modèle GREENSOFT.
+
+
+La théorie de la durabilité stratifiée, présentée dans [SustainableStratifiedTheory], offre une perspective nuancée :
+\begin{itemize}
+    \item La durabilité à multiples facettes : Elle met l'accent sur la \emph{« stratified and multisystemic nature of sustainability. »}~\cite{SustainableStratifiedTheory} La durabilité englobe divers aspects au-delà de l'impact sur l'environnement;
+    \item Processus et produit : Le modèle fait la distinction entre le processus de développement du logiciel et le produit logiciel qui en résulte. Les considérations de durabilité s'appliquent aux deux.
+\end{itemize}
+
+
+La théorie met en évidence quatre dimensions clés de la durabilité :
+\begin{enumerate}
+    \item L'environnement : Minimiser l'empreinte environnementale du produit logiciel;
+    \item Sociale : Prise en compte de l'impact social du logiciel sur les utilisateurs et les parties prenantes;
+    \item Économique : Garantir la viabilité économique du logiciel et l'allocation responsable des ressources;
+    \item Technique : Maintenir la qualité technique et les performances du logiciel tout en optimisant la durabilité.
+\end{enumerate}
+Il est essentiel de prendre en compte toutes ces dimensions pour parvenir à une véritable durabilité des logiciels.
+
+
+La recherche dans~\cite{SustainabilityAwarenessFramework} et~\cite{SustainabilityRequirementsEngineering} explore l'intégration de la durabilité dans les méthodologies de développement existantes :
+\begin{itemize}
+    \item Sustainability-Aware Scrum Framework : Ce cadre vise à fournir des lignes directrices pour l'intégration des considérations de durabilité dans la méthodologie Agile Scrum.
+    \item \acrfull{susaf} : il propose un ensemble de questions et d'instructions pour guider les ingénieurs en exigences dans leurs discussions sur la durabilité avec les parties prenantes.
+    \item Processus itératif avec listes de contrôle : Cette approche utilise des listes de contrôle pour identifier les besoins en matière de durabilité dans différentes dimensions au cours de la phase d'ingénierie des exigences.
+\end{itemize}
+Ces cadres démontrent les efforts en cours pour faire de la durabilité une partie inhérente du processus de développement de logiciels.
+
+
+La communauté des développeurs de logiciels peut établir une approche globale de la conception, du développement et du déploiement de solutions logicielles durables en s'appuyant sur des cadres tels que le modèle GREENSOFT, la théorie de la durabilité stratifiée et des adaptations des méthodologies existantes tenant compte de la durabilité.
+
+% Cadres et modèles de durabilité
+%~\cite{GreenSoftModel} "Arndt et al. discuss implications of evolving releases of a widely used text processor and relate these to Green IT and SD. As a solution to cope with sustainability issues during software design and development, they propose the so called “Grand Management Information Design”."
+%~\cite{GreenSoftModel} "Besides reflecting the proposed life cycle of a software product, there are further methods that support software architects, designers, and developers in producing green and sustainable software applications."
+%~\cite{SustainableStratifiedTheory} "The goal of this model is to explain how sustainability relates to software development based on existing qualitative research and to provide a more nuanced view of the stratified and multisystemic nature of sustainability according to our observations from the meta-synthesis."
+%~\cite{SustainableStratifiedTheory} "The model separates the software process from the software product to illustrate that sustainability is a property of both and while the nature of the software development process affects the resulting software system, a sustainable process does not guarantee a sustainable product or vice versa."
+%~\cite{SustainableStratifiedTheory} "The model depicts four dimensions or pillars of sustainability—environmental, social, economic and technical. All four dimensions apply to software products."
+%~\cite{SustainabilityAwarenessFramework} "Our future work will support the development of a Sustainability-Aware Scrum Framework, which could provide guidelines on how to consider sustainability issues in ASD, based on the original Scrum framework."
+%~\cite{SustainabilityRequirementsEngineering} "Duboc et al. present a sustainability awareness framework (SuSAF) that includes a set of instructions and questions that can be used by requirements engineers to guide discussions on sustainability with the stakeholders."
+%~\cite{SustainabilityRequirementsEngineering} "Paech, Moreira, Araujo, and Kaiser introduce an iterative process with two checklists. The first checklist can be used to identify needs of each sustainability dimension for a system, e.g. little pollution and little waste in the environmental dimension or high customer satisfaction and little cost in the economical dimension."
+%~\cite{SustainabilityRequirementsEngineering} "Penzenstadler et al. describe the application of the framework in an educational context."
+
+\subsection{Comportement et pratiques des développeurs}
+Le succès de l'ingénierie logicielle écologique dépend non seulement des solutions techniques, mais aussi des attitudes et des pratiques des développeurs de logiciels.
+
+
+Conformément à l'article~\cite{SustainableEngNeglectedPerspective}, il est utile de disposer de \emph{« empirically validated practices and guidelines for processes, policies, practices to ensure engineer’s sustainability. »} En effet, il est de plus en plus difficile d'établir des directives pratiques permettant aux développeurs d'intégrer les considérations relatives à la durabilité dans leur travail quotidien. Ces lignes directrices peuvent porter sur divers aspects du cycle de développement des logiciels, de la conception et du codage au déploiement et à la maintenance.
+
+
+La recherche dans~\cite{SustainableEngNeglectedPerspective} évoque une \emph{« taxonomy of factors and guidelines »} qui peut influencer la prise de décision des développeurs : \emph{« The resulting taxonomy [...] will influence the decision-making models and methods to take into consideration the concepts of sustainability. »} Cette taxonomie peut fournir un cadre permettant aux développeurs d'évaluer leurs choix et de prendre des décisions éclairées qui donnent la priorité à la durabilité tout au long du processus de développement.
+
+
+La même étude fait état de la difficulté de comprendre les interrelations entre les différents facteurs qui influencent le comportement des promoteurs : \emph{« The factors would also serve as a foundation for future research to find interrelations between them, categorize them and devise ways to control them. »} Ces facteurs peuvent inclure les éléments suivants :
+\begin{itemize}
+    \item Connaissance et sensibilisation aux principes de l'ingénierie logicielle écologique.
+    \item Accès aux outils et aux ressources qui soutiennent le développement durable.
+    \item Culture organisationnelle et engagement des dirigeants en faveur du développement durable.
+\end{itemize}
+La recherche de ces facteurs et de leurs interactions permettra à la communauté des développeurs de logiciels de concevoir des interventions et des stratégies efficaces pour promouvoir les pratiques de développement durable parmi les développeurs.
+
+
+La promotion d'une culture du développement durable au sein de la communauté des développeurs de logiciels nécessite une approche sur plusieurs fronts.  L'élaboration de lignes directrices pratiques, la mise en place d'un cadre décisionnel pour la durabilité et la compréhension des facteurs influençant le comportement des développeurs sont autant d'étapes cruciales.
+
+% Comportement et pratiques des développeurs
+%~\cite{SustainableEngNeglectedPerspective} "The third outcome is the development of empirically validated practices and guidelines for processes, policies, practices to ensure engineer’s sustainability." 
+%~\cite{SustainableEngNeglectedPerspective} "The resulting taxonomy of factors and guidelines will influence the decision-making models and methods to take into consideration the concepts of sustainability." 
+%~\cite{SustainableEngNeglectedPerspective} "The factors would also serve as a foundation for future research to find interrelations between them, categorize them and devise ways to control them."
+
+\subsection{Collaboration et sensibilisation}
+La collaboration entre les parties prenantes et la sensibilisation aux pratiques d'ingénierie logicielle écologique sont fondamentales pour une mise en œuvre réussie.
+
+
+La publication~\cite{SustainabilityAwarenessFramework} illustre l'application pratique de cadres tels que \acrshort{susaf} : \emph{« In this experience paper, we present the results of two case studies from ongoing agile development projects where the Sustainability Awareness Framework was applied. »} Ce document témoigne de la valeur de l'utilisation de ces cadres pour faciliter les discussions collaboratives et intégrer les considérations de durabilité dans les processus de développement agile. L'étude poursuit en mentionnant des \emph{« sustainability workshops based on SusAF »} et la \emph{« mapping identified sustainability effects to the product backlog items »} comme exemples concrets de l'application du cadre.
+
+
+Bien que les cadres tels que \acrshort{susaf} n'aient pas été conçus à l'origine pour les méthodologies agiles,~\cite{SustainabilityRequirementsEngineering} reconnaît leur applicabilité potentielle : \emph{« It is remarkable that none of these approaches directly target the application within an agile software development setting, although this does not mean that they are not applicable in such a setting. »} On peut donc en déduire que les cadres existants peuvent être adaptés et intégrés dans des flux de travail agiles afin de répondre aux préoccupations en matière de durabilité.
+
+
+Une autre approche décrite dans~\cite{SustainabilityRequirementsEngineering} consiste à utiliser des listes de contrôle pour \emph{« to identify needs of each sustainability dimension for a system. »} Cette approche structurée peut être utilisée en collaboration pendant la phase d'ingénierie des exigences afin de s'assurer que tous les aspects de la durabilité sont pris en compte. La nature itérative du processus permet de l'affiner continuellement au fur et à mesure de l'avancement du projet.
+
+
+L'application des cadres dans des contextes éducatifs, comme mentionné dans~\cite{SustainabilityRequirementsEngineering}, joue un rôle crucial dans la sensibilisation et la construction d'une future génération de développeurs dotés d'une expertise en ingénierie logicielle écologique : \emph{« Penzenstadler et al. describe the application of the framework in an educational context. »} En intégrant les principes de durabilité dans les programmes éducatifs, la communauté des développeurs de logiciels peut cultiver une culture de la durabilité dès le départ.
+
+
+La collaboration entre les développeurs, les parties prenantes et les utilisateurs, associée à des campagnes de sensibilisation et à des initiatives éducatives, est essentielle pour l'adoption réussie de pratiques d'ingénierie logicielle écologiques. Les cadres tels que \acrshort{susaf} et les listes de contrôle peuvent constituer des outils précieux pour faciliter la collaboration et intégrer les considérations de durabilité tout au long du cycle de développement.
+
+% Collaboration et sensibilisation
+%~\cite{SustainabilityAwarenessFramework} "In this experience paper, we present the results of two case studies from ongoing agile development projects where the Sustainability Awareness Framework was applied." 
+%~\cite{SustainabilityAwarenessFramework} "We conducted sustainability workshops based on SusAF and mapped identified sustainability effects to the product backlog items of both projects."
+%~\cite{SustainabilityRequirementsEngineering} "Paech, Moreira, Araujo, and Kaiser introduce an iterative process with two checklists. The first checklist can be used to identify needs of each sustainability dimension for a system, e.g. little pollution and little waste in the environmental dimension or high customer satisfaction and little cost in the economical dimension."
+%~\cite{SustainabilityRequirementsEngineering} "Penzenstadler et al. describe the application of the framework in an educational context."
+%~\cite{SustainabilityRequirementsEngineering} "It is remarkable that none of these approaches directly target the application within an agile software development setting, although this does not mean that they are not applicable in such a setting."
+
+\paragraph{}
+Le développement de logiciels durables ne se résume pas à une simple question technique. Il s'agit d'une transformation holistique de la culture et des pratiques au sein de la communauté des développeurs de logiciels.
+
+\paragraph{Engagement et Responsabilité Individuels :} Sensibiliser les développeurs à l'impact environnemental de leur travail et à l'importance de l'ingénierie logicielle écologique est crucial. Il est nécessaire de leur donner les compétences et les connaissances nécessaires pour adopter des pratiques durables dans leur travail quotidien. Encourager les développeurs à adopter une attitude pro-active et engagée envers la durabilité logicielle est essentiel.
+
+\paragraph{Intégration de la Durabilité dans les Projets :} Tirer parti des méthodologies de gestion de projet existantes et les adapter pour intégrer les considérations de durabilité est important. Exploiter les outils et technologies disponibles pour mesurer, évaluer et optimiser l'impact environnemental des logiciels est crucial. Mettre en place des processus et des métriques pour suivre et évaluer la performance des logiciels en matière de durabilité est essentiel.
+
+\paragraph{Cadres et Modèles de Durabilité :} Utiliser des frameworks tels que le modèle GREENSOFT et la théorie de la durabilité stratifiée pour guider le développement de logiciels durables est important. Adapter les méthodologies de développement existantes, telles que Agile, pour intégrer les principes de durabilité est crucial. Continuer à explorer et à développer de nouveaux modèles et outils pour répondre aux besoins spécifiques de l'ingénierie logicielle écologique est essentiel.
+
+\paragraph{Collaboration et sensibilisation :} Impliquer tous les acteurs du développement logiciel, des développeurs aux utilisateurs, dans la création de solutions durables est important. Favoriser le partage des connaissances et des meilleures pratiques au sein de la communauté des développeurs de logiciels est crucial. Intégrer les principes de durabilité dans les programmes éducatifs et organiser des campagnes de sensibilisation pour le grand public est essentiel.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Promotion des Pratiques Durables au Niveau des Équipes de Développement}
+\label{sec:pratiques-equipe}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Les équipes de développement jouent un rôle central dans la réalisation de logiciels durables.
+
+\subsection{Intégrer la durabilité dans le processus de développement}
+L'ingénierie logicielle écologique va au-delà des initiatives ponctuelles. Pour avoir un impact durable, les considérations de durabilité doivent être intégrées de manière transparente dans le processus de développement des logiciels.
+
+
+Pour reprendre les termes de~\cite{GreenAgileMethods}, \emph{« future impacts on sustainable development, which are expected to arise from post development phases, have to be considered during software development. »} Le besoin d'une perspective axée sur le cycle de vie est ainsi mis en évidence.  Les décisions prises pendant le développement peuvent avoir des conséquences environnementales à long terme. Les considérations relatives au développement durable doivent englober non seulement la phase de développement, mais aussi l'utilisation, la maintenance et l'élimination finale du logiciel.
+
+
+L'étude de~\cite{GreenAgileMethods} propose un \emph{« continuous improvement cycle »} pour intégrer la durabilité dans les processus de développement de logiciels : \emph{« To organize and establish a behavior in a software development process that is aware of sustainability issues, software developing organizations should implement a continuous improvement cycle that focuses on relevant effects and impacts. »} Cette approche cyclique permet d'évaluer et d'affiner en permanence les pratiques de durabilité tout au long du cycle de développement.
+
+
+Le modèle GreenSoft~\cite{GreenSoftModel} est axé sur l'importance de l'engagement organisationnel : \emph{« Organizations that develop green and sustainable software should commit themselves to environmental and social responsibility. »} Cet engagement peut s'exprimer par des déclarations de responsabilité environnementale et sociale et par la volonté de respecter les normes internationales du travail. En faisant de la durabilité une valeur fondamentale, les organisations peuvent créer un environnement favorable à la mise en œuvre de pratiques durables par les développeurs.
+
+
+Le concept de \emph{« Procedure Models »} du modèle GREENSOFT offre un cadre pratique pour l'intégration~\cite{GreenSoftModel} : \emph{« The model component Procedure Models makes it possible to classify procedure models that cover acquisition and development of software, maintenance of IT systems, and user support. »} Ces modèles de procédure peuvent être adaptés pour intégrer des considérations de durabilité à chaque étape du cycle de vie du développement logiciel, garantissant ainsi une approche holistique.
+
+
+L'intégration de la durabilité dans le processus de développement nécessite une approche à multiples facettes. La prise en compte des impacts à long terme, l'adoption d'un état d'esprit d'amélioration continue, la promotion d'une culture de la responsabilité environnementale et sociale au sein des organisations et l'exploitation de modèles de procédure sont autant d'étapes cruciales de ce parcours.
+
+% Intégrer la durabilité dans le processus de développement
+%~\cite{GreenAgileMethods} "According to the definitions and the life cycle, future impacts on sustainable development, which are expected to arise from post development phases, have to be considered during software development."
+%~\cite{GreenAgileMethods} "To organize and establish a behavior in a software development process that is aware of sustainability issues, software developing organizations should implement a continuous improvement cycle that focuses on relevant effects and impacts."
+%~\cite{GreenSoftModel} "Organizations that develop green and sustainable software should commit themselves to environmental and social responsibility, expressed, e.g. in environmental and social responsibility statements, their commitment to international labor standards."
+%~\cite{GreenSoftModel} "The model component Procedure Models makes it possible to classify procedure models that cover acquisition and development of software, maintenance of IT systems, and user support."
+
+\subsection{Utiliser des outils et des mesures}
+Une mesure efficace est essentielle à toute entreprise réussie. L'ingénierie logicielle écologique ne fait pas exception.
+
+
+Les recherches menées dans~\cite{IntegrationSustainabilityMetrics} révèlent l'importance des \emph{« key performance indicators (KPIs) »} qui non seulement mesurent \emph{« the frequency and velocity of value delivery »} mais aussi \emph{« emphasize the importance of sustainable practices in software development. »}  Ces indicateurs clés de performance axés sur la durabilité peuvent fournir des informations précieuses sur l'impact environnemental des efforts de développement de logiciels et démontrer le lien entre les pratiques durables et la réussite du projet.
+
+
+De plus, comme le mentionne~\cite{GreenSoftModel}, il existe des outils \emph{« that automatically calculate software metrics from source code or compiled artifacts. »}  Ces outils peuvent être adaptés pour mesurer des caractéristiques logicielles pertinentes pour l'environnement, telles que l'efficacité du code ou l'utilisation des ressources. En intégrant ces outils dans le processus de développement, les développeurs peuvent recevoir un retour d'information en temps réel sur l'empreinte environnementale de leur code et prendre des décisions d'optimisation fondées sur des données.
+
+
+En dépit de la valeur des outils automatisés, il est important de reconnaître leurs limites.  Certaines considérations de durabilité peuvent ne pas être facilement quantifiables.  Pour ces aspects, d'autres méthodes d'évaluation peuvent s'avérer nécessaires, telles que des évaluations d'experts ou des enquêtes auprès des utilisateurs qui explorent l'impact social et environnemental plus large du logiciel.
+
+
+Une combinaison d'outils de mesure automatisés, d'indicateurs clés de performance axés sur la durabilité et de méthodes d'évaluation qualitative peut fournir une vue d'ensemble de l'empreinte environnementale d'un produit logiciel et de la durabilité globale du processus de développement. 
+
+% Utiliser des outils et des mesures
+%~\cite{IntegrationSustainabilityMetrics} "The proposed key performance indicators (KPIs) not only facilitate a better understanding of the frequency and velocity of value delivery but also emphasize the importance of sustainable practices in software development."
+%~\cite{GreenSoftModel} "On the one hand, there are tools that automatically calculate software metrics from source code or compiled artifacts."
+
+\subsection{Collaboration et recherche}
+L'ingénierie logicielle écologique est un domaine qui évolue rapidement et qui présente un vaste potentiel d'impact positif sur l'environnement.
+
+
+La théorie~\cite{SustainableStratifiedTheory} indique que \emph{« countless interventions could potentially improve the sustainability of software processes and products, many researchers can contribute to this area in parallel. »} Ces éléments renforcent le besoin de collaboration entre les chercheurs, les développeurs, les praticiens et les parties prenantes de différentes disciplines. En partageant les connaissances, les expériences et les meilleures pratiques, la communauté des développeurs de logiciels peut collectivement accélérer les progrès en matière d'ingénierie logicielle écologique.
+
+
+L'étude de~\cite{SustainableStratifiedTheory} suggère également que les interventions peuvent être "sociales, techniques ou sociotechniques". Cet aspect rend utile l'exploration d'un large éventail de solutions :
+\begin{itemize}
+    \item Les interventions sociales peuvent consister à sensibiliser, à promouvoir des changements culturels au sein des équipes de développement ou à encourager les pratiques durables.
+    \item Les interventions techniques peuvent se concentrer sur le développement d'outils de mesure et d'optimisation de l'efficacité énergétique des logiciels, sur la mise en œuvre d'algorithmes économes en ressources ou sur la conception de logiciels à durée de vie prolongée.
+    \item Les interventions sociotechniques peuvent combiner les aspects sociaux et techniques, comme le développement de programmes éducatifs conçus pour doter les développeurs des compétences techniques et des connaissances nécessaires au développement de logiciels écologiques.
+\end{itemize}
+
+
+La recherche dans l'article~\cite{SafetySecuritySustainability} met l'accent sur le potentiel de collaboration interdisciplinaire : \emph{« We’ve described a number of areas in software engineering that can borrow from safety and security to address sustainability in effective ways; each of these areas requires extended further research. »} Les enseignements tirés de domaines bien établis tels que l'ingénierie de la sûreté et de la sécurité peuvent donc être adaptés pour éclairer les pratiques de développement de logiciels écologiques.
+
+
+L'ingénierie logicielle écologique est un domaine jeune qui a encore beaucoup à découvrir. Comme cela a été souligné tout au long de cette analyse, la recherche continue est essentielle pour développer des techniques de mesure plus sophistiquées, affiner les stratégies d'intervention et identifier de nouvelles approches pour concevoir, développer et déployer des solutions logicielles durables.
+
+% Collaboration et recherche
+%~\cite{SustainableStratifiedTheory} "Since countless interventions could potentially improve the sustainability of software processes and products, many researchers can contribute to this area in parallel."
+%~\cite{SustainableStratifiedTheory} "Interventions may be social, technical, or sociotechnical."
+%~\cite{SafetySecuritySustainability} "We’ve described a number of areas in software engineering that can borrow from safety and security to address sustainability in effective ways; each of these areas requires extended further research."
+
+\subsection{Appliquer des méthodologies agiles}
+Les méthodologies de développement de logiciels agiles, qui mettent l'accent sur le développement itératif, la collaboration et la réactivité au changement, sont très prometteuses pour l'ingénierie logicielle écologique.
+
+
+Les méthodes agiles sont \emph{« human-centric" and value "individuals and interactions over processes and tools »}, comme évoqué dans le document~\cite{SustainableEngNeglectedPerspective}. Cette valeur fondamentale s'aligne bien sur les objectifs sociétaux et environnementaux plus larges de l'ingénierie logicielle écologique. En favorisant un environnement collaboratif et en donnant la priorité à une communication ouverte, les équipes agiles sont bien placées pour identifier et traiter les problèmes de durabilité tout au long du processus de développement.
+
+
+Dans son étude,~\cite{SustainabilityAwarenessFramework} propose d'\emph{« continuously analyzing sustainability effects of new backlog items during the development process. »} Il en ressort la possibilité d'intégrer des considérations de durabilité à chaque étape du flux de travail agile, de l'affinement du carnet de commandes à la planification des sprints et aux rétrospectives.  Les équipes agiles peuvent prendre des décisions éclairées en donnant la priorité à la fonctionnalité et à la responsabilité environnementale en évaluant en permanence l'impact des éléments du carnet de commandes sur le développement durable.
+
+
+La même étude dans~\cite{SustainabilityRequirementsEngineering} conseille \emph{« a software tool that tracks the sustainability impacts of software requirements »} tels que les récits d'utilisateurs et les critères d'acceptation. Cette mesure peut avoir un \emph{« backlog refinement in analysing and prioritising the requirements. »} La prise en compte de la durabilité directement dans les artefacts agiles de base permet aux équipes de s'assurer que ces aspects sont systématiquement pris en compte tout au long du processus de développement.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{MemoireMaster-NestorSkoczylas/figures/Outil logiciel pour le suivi des impacts de durabilité des exigences logicielles.png}
+    \caption{Outil logiciel pour le suivi des impacts de durabilité des exigences logicielles}
+    \label{fig:outil-logiciel}
+\end{figure}
+
+La figure ci-contre (\ref{fig:outil-logiciel}) montre un exemple d'outil logiciel pour le suivi des impacts de durabilité des exigences logicielles. L'outil permet d'analyser et de visualiser l'impact environnemental des exigences, ce qui peut aider les équipes à prioriser les exigences et à prendre des décisions plus durables. RQ1 s'intéresse à l'application d'une méthode d'ingénierie des exigences existante, nommée \acrshort{susaf} (il manque probablement une information sur ce qu'est \acrshort{susaf}, vous devriez la préciser si possible), dans le contexte du développement agile de logiciels (ASD). Quant à lui, RQ2 se concentre sur le lien entre les éléments du backlog et les impacts sur la durabilité identifiés précédemment par la méthode \acrshort{susaf} (en se basant sur RQ1). Le backlog est une liste priorisée des fonctionnalités et des tâches à réaliser dans le développement agile.
+
+L'utilisation d'un outil logiciel pour le suivi des impacts de durabilité des exigences logicielles peut contribuer à une meilleure prise en compte de la durabilité tout au long du processus de développement. Cela peut aider les équipes à créer des logiciels plus éco-responsables et à réduire leur impact environnemental.
+
+Les méthodologies agiles offrent un cadre souple et adaptable pour l'intégration de pratiques d'ingénierie logicielle écologiques. Les équipes agiles peuvent jouer un rôle essentiel en alignant les valeurs agiles sur les objectifs de durabilité, en évaluant en permanence l'impact des décisions de développement sur la durabilité, en tirant parti d'outils spécialisés et en améliorant les artefacts agiles de base en y intégrant des considérations de durabilité.
+
+% Appliquer des méthodologies agiles
+%~\cite{SustainableEngNeglectedPerspective} "Agile methodology emerged as a human-centric approach with autonomous teams that value individuals and interactions over processes and tools."
+%~\cite{SustainabilityAwarenessFramework} "Our hypothesis is that continuously analyzing sustainability effects of new backlog items during the development process will provide new information to the product owner and the stakeholders for decision making."
+%~\cite{SustainabilityRequirementsEngineering} "A potential software tool that tracks the sustainability impacts of software requirements (defined as user stories), is related to RQ3, RQ4 and RQ5, because it can support the whole Scrum team during the backlog refinement in analysing and prioritising the requirements."
+
+
+La promotion de pratiques durables au sein des équipes de développement est un pilier essentiel de l'ingénierie logicielle écologique. En intégrant la durabilité dans le processus de développement, les équipes peuvent contribuer de manière significative à un avenir plus vert et plus responsable pour le développement de logiciels.
+
+\paragraph{Intégrer la durabilité dans le processus de développement :} L'intégration de la durabilité dans le processus de développement implique une approche holistique qui prend en compte les impacts à long terme et encourage l'amélioration continue. Cela implique de choisir des technologies et des architectures économes en énergie, de concevoir des logiciels efficients et de minimiser l'empreinte carbone du cycle de vie du logiciel.
+
+\paragraph{Utiliser des outils et des mesures :} La mesure et l'évaluation de la durabilité nécessitent une combinaison d'outils automatisés, d'indicateurs clés de performance et de méthodes d'évaluation qualitative. Cela permet aux équipes de suivre leurs progrès et d'identifier les domaines où des améliorations sont possibles.
+
+\paragraph{Collaboration et recherche :} La collaboration entre les chercheurs, les développeurs, les praticiens et les parties prenantes est essentielle pour faire progresser l'ingénierie logicielle écologique. En partageant les connaissances et les meilleures pratiques, il est possible d'accélérer l'innovation et de créer des solutions logicielles plus durables.
+
+\paragraph{Appliquer des méthodologies agiles :} Les méthodologies agiles offrent un cadre flexible pour l'intégration de pratiques durables, en mettant l'accent sur la collaboration, la communication et l'évaluation continue. Cela permet aux équipes de s'adapter rapidement aux changements et d'améliorer continuellement la durabilité de leurs logiciels.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Alignement de la Durabilité avec la Stratégie d'Entreprise dans le Développement Logiciel}
+\label{sec:rse-durabilite}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+L'alignement de la stratégie d'entreprise avec les objectifs de durabilité dans le développement logiciel est essentiel pour réussir.
+
+\subsection{Intégrer la durabilité dans la stratégie \acrshort{rse}}
+L'écologisation des efforts de développement de logiciels s'aligne parfaitement sur l'attention croissante portée aux considérations environnementales, sociales et de gouvernance d'entreprise dans le cadre des \acrshort{rse}.
+
+
+C'est ce que montre le document~\cite{GreenAgileMethods} : \emph{« design for sustainable development is a principle that should be present in every software project and product. »} L'importance de l'intégration des considérations de durabilité dans tous les projets de développement de logiciels, quel que soit le domaine cible direct du logiciel, est ainsi mise en exergue. Les entreprises qui intègrent le développement durable dans les principes de base du développement de logiciels peuvent faire preuve d'un véritable engagement en faveur de la responsabilité environnementale.
+
+
+Le modèle GREENSOFT~\cite{GreenAgileMethods} confirme la valeur d'une approche holistique de la durabilité : \emph{« Organizations that develop green and sustainable software should commit themselves to environmental and social responsibility. »} Cet engagement doit aller au-delà du processus de développement logiciel lui-même. Les entreprises doivent s'efforcer d'assumer leur responsabilité environnementale et sociale \emph{« throughout the entire supply chain »}, en tenant compte de tous les aspects \emph{« necessary to produce, advertise, distribute, and dispose/recycle the software product or parts of it. »} Le champ d'application des efforts de \acrshort{rse} est ainsi élargi à l'ensemble du cycle de vie du produit logiciel.
+
+
+Ce modèle fait également ressortir l'importance d'adhérer aux \emph{« international labor standards »}, correspondant aux principes fondamentaux de la \acrshort{rse}. Ces principes consistent à garantir des pratiques de travail équitables tout au long de la chaîne d'approvisionnement du développement de logiciels. Lorsqu'elles s'engagent à respecter un approvisionnement éthique et des conditions de travail respectueuses, les entreprises peuvent faire preuve d'une approche globale de la responsabilité sociale.
+
+
+L'intégration de l'ingénierie logicielle écologique dans la stratégie de RSE d'une entreprise nécessite une approche globale. Cette approche intégrée positionne l'ingénierie logicielle écologique non seulement comme une innovation technique, mais aussi comme un pilier stratégique d'un avenir responsable et durable pour les entreprises.
+
+% Intégrer la durabilité dans la stratégie RSE
+%~\cite{GreenAgileMethods} "From our point of view, design for sustainable development is a principle that should be present in every software project and product, even in general purpose software where the application domain does not directly target on improving another process’ or product’s impacts or effects on sustainable development." 
+%~\cite{GreenSoftModel} "Organizations that develop green and sustainable software should commit themselves to environmental and social responsibility, expressed, e.g. in environmental and social responsibility statements, their commitment to international labor standards."
+%~\cite{GreenSoftModel} "These commitments should also cover environmental and social standards throughout the entire supply chain of all products and services, which are necessary to produce, advertise, distribute, and dispose/recycle the software product or parts of it."
+
+\subsection{Avantages de l’intégration de la durabilité}
+L'intégration de pratiques durables dans le développement de logiciels offre une multitude d'avantages, non seulement pour l'environnement, mais aussi pour les entreprises et la société dans son ensemble.
+
+
+Les recherches menées dans~\cite{IntegrationSustainabilityMetrics} mettent en évidence le fait qu'une approche axée sur la durabilité peut \emph{« promoting enhanced delivery efficiency »}. En optimisant l'efficacité des logiciels et en réduisant la consommation de ressources, les pratiques d'ingénierie logicielle écologique peuvent permettre d'accélérer les cycles de développement, de réduire les coûts d'exploitation et de diminuer le besoin d'infrastructures matérielles supplémentaires. Il en advient une efficacité accrue tout au long du cycle de vie des logiciels.
+
+
+La même étude souligne que le modèle proposé \emph{« bolstering the sustainability ethos of the software development lifecycle. »} En intégrant systématiquement des considérations de durabilité, les entreprises peuvent démontrer un engagement fort en faveur de la responsabilité environnementale. La réputation de la marque se voit renforcer, attire des clients et des talents soucieux de l'environnement et positionne l'entreprise comme un leader dans le domaine en pleine expansion de l'ingénierie logicielle écologique.
+
+
+Le \emph{« dual emphasis on delivery and sustainability »}, dont il est question dans~\cite{IntegrationSustainabilityMetrics}, fournit des informations précieuses pour la prise de décision.  En mesurant à la fois la performance des projets et leur impact sur le développement durable, les entreprises peuvent faire des choix éclairés qui concilient les objectifs commerciaux et la responsabilité environnementale. Cette vision globale peut conduire à des solutions logicielles plus durables et plus performantes sur le plan commercial.
+
+
+L'avantage le plus important de l'ingénierie logicielle écologique réside dans sa capacité à réduire l'empreinte environnementale de l'industrie du logiciel. En optimisant l'efficacité du code, en minimisant la consommation de ressources et en prolongeant la durée de vie des produits logiciels, les pratiques écologiques peuvent réduire de manière significative la consommation d'énergie, les émissions de gaz à effet de serre et les ressources naturelles.  Elles contribuent ainsi à un avenir plus durable pour tous.
+
+
+L'intégration de la durabilité dans le développement de logiciels est une proposition gagnant-gagnant. Elle permet d'améliorer l'efficacité, de soutenir l'éthique de durabilité d'une entreprise, d'améliorer la prise de décision et de réduire de manière significative l'impact environnemental des logiciels.
+
+% Avantages de l’intégration de la durabilité
+%~\cite{IntegrationSustainabilityMetrics} "The proposed model serves as a beacon for software organizations worldwide, promoting enhanced delivery efficiency while bolstering the sustainability ethos of the software development lifecycle."
+%~\cite{IntegrationSustainabilityMetrics} "The research not only presents this model but also has practical implications. The findings underscore the model’s unparalleled efficacy, providing a pragmatic solution for the simultaneous assessment of project and portfolio performance with a dual emphasis on delivery and sustainability."
+
+\subsection{Les défis de l’intégration de la durabilité}
+Malgré ses avantages indéniables, l'intégration de la durabilité dans le développement de logiciels présente un certain nombre de défis importants.
+
+
+La théorie de la stratification durable~\cite{SustainableStratifiedTheory} montre que le domaine ne dispose pas d'une base solide de recherche empirique : \emph{« Meanwhile, our analysis discovered zero controlled experiments; indeed, the dominant research method was non-empirical (e.g. position papers). »} Des études plus rigoureuses sont donc nécessaires pour valider l'efficacité des pratiques d'ingénierie logicielle écologique proposées et quantifier leur impact sur la durabilité environnementale et les résultats du développement logiciel.
+
+
+Les travaux de recherche menés dans le cadre de~\cite{SustainableStratifiedTheory} font également ressortir la nécessité de disposer \emph{« more sophisticated instruments that account for the different meanings of sustainability at different strata and the diverse social, technical, and sociotechnical systems affected. »} Les techniques de mesure actuelles peuvent ne pas saisir pleinement la nature multidimensionnelle de la durabilité. Il est essentiel de développer des outils d'évaluation plus complets pour mesurer avec précision l'impact environnemental et social des produits logiciels.
+
+
+Des études telles que~\cite{SustainabilityAwarenessFramework} mettent en évidence le défi que représente le changement des mentalités en matière de développement : \emph{« Although we received positive feedback from the practitioners concerning the continuous discussion of sustainability effects of software systems during the development process, some participants also mentioned several challenges. »} L'un d'entre eux est que \emph{« regarding sustainability issues in software development is not seen as best practice yet and will only be taken into account if explicitly requested by the clients. »} Faire évoluer la culture du développement pour faire de la durabilité un principe fondamental nécessite des campagnes de sensibilisation et des initiatives éducatives permanentes.
+
+
+La même étude dans~\cite{SustainabilityAwarenessFramework} suggère même qu'\emph{« there might even be the need for legal requirements to perform sustainability assessments before and/or during developing new software systems. »} Si les réglementations peuvent être un puissant moteur de changement, l'idéal serait que la communauté des développeurs de logiciels adopte pro-activement le développement durable sans avoir besoin de mandats externes.
+
+% Les défis de l’intégration de la durabilité
+%~\cite{SustainableStratifiedTheory} "Meanwhile, our analysis discovered zero controlled experiments; indeed, the dominant research method was non-empirical (e.g. position papers)."
+%~\cite{SustainableStratifiedTheory} "In conclusion, SE research should (1) propose and rigorously assess more sustainability-improving interventions, and (2) develop more sophisticated instruments that account for the different meanings of sustainability at different strata and the diverse social, technical, and sociotechnical systems affected."
+%~\cite{SustainabilityAwarenessFramework} "Although we received positive feedback from the practitioners concerning the continuous discussion of sustainability effects of software systems during the development process, some participants also mentioned several challenges."
+%~\cite{SustainabilityAwarenessFramework} "First, regarding sustainability issues in software development is not seen as best practice yet and will only be taken into account if explicitly requested by the clients."
+%~\cite{SustainabilityAwarenessFramework} "There might even be the need for legal requirements to perform sustainability assessments before and/or during developing new software systems."
+
+\subsection{Élargir la portée de la durabilité}
+L'ingénierie logicielle écologique va au-delà des seules considérations environnementales. Pour une véritable durabilité, il faut élargir le champ d'application pour englober également les aspects humains et économiques.
+
+
+D'après~\cite{SustainableStratifiedTheory}, les professionnels du logiciel \emph{« must also be encouraged to view sustainability not just as an ecological concept or a technical requirement, but also as a concern of human and economic stakeholders. »} Ce concept met l'accent sur la nécessité de prendre en compte l'impact des logiciels sur les personnes et la société. Les pratiques d'ingénierie logicielle écologique devraient promouvoir le bien-être des utilisateurs, les pratiques éthiques en matière de données et les principes de conception inclusifs afin de garantir que le développement de logiciels profite à l'ensemble de l'humanité.
+
+
+Enfin, les recherches menées dans~\cite{SustainableEngNeglectedPerspective} dénoncent les lacunes de la littérature actuelle sur l'ingénierie logicielle : \emph{« The current software engineering literature lacks the individual (human) dimension of sustainability. »} Il en ressort qu'il est primordial d'intégrer les principes de conception centrée sur l'homme dans les pratiques d'ingénierie logicielle écologique. Les logiciels doivent être conçus de manière à être accessibles, inclusifs et respectueux de la vie privée et de la sécurité des utilisateurs. En donnant la priorité à la dimension humaine, nous pouvons faire en sorte que la technologie améliore et renforce les individus et les communautés.
+
+
+Une approche globale de l'ingénierie logicielle durable nécessite de prendre en compte non seulement l'impact environnemental, mais aussi les implications sociales et économiques du développement de logiciels.
+
+% Élargir la portée de la durabilité
+%~\cite{SustainableStratifiedTheory} "Software professionals must also be encouraged to view sustainability not just as an ecological concept or a technical requirement, but also as a concern of human and economic stakeholders."
+%~\cite{SustainableEngNeglectedPerspective} "The current software engineering literature lacks the individual (human) dimension of sustainability."
+
+
+L'alignement de la stratégie d'entreprise avec les objectifs de durabilité dans le développement logiciel est crucial pour construire un avenir plus responsable et prospère. En intégrant l'ingénierie logicielle écologique dans la stratégie de \acrshort{rse}, les entreprises peuvent améliorer leur efficacité, renforcer leur réputation, contribuer à un environnement plus sain et répondre aux attentes croissantes des clients et des parties prenantes.
+
+
+L'intégration de la durabilité dans la stratégie de \acrshort{rse} implique une approche holistique qui s'étend au-delà du développement logiciel et englobe l'ensemble de la chaîne d'approvisionnement. De plus, les avantages de l'ingénierie logicielle écologique incluent une meilleure efficacité, une réputation d'entreprise responsable et une réduction significative de l'empreinte environnementale. Il en va ainsi pour les défis à relever incluent le manque de recherche empirique, les limites des outils de mesure, la nécessité de changer les mentalités et le besoin potentiel de réglementations. La durabilité, elle, dans le développement logiciel ne se résume pas à l'environnement, mais doit également englober les aspects humains et économiques pour garantir un développement responsable et inclusif.
+
+
+L'ingénierie logicielle écologique n'est pas une option, mais une nécessité pour l'avenir de l'industrie du logiciel. En s'engageant à adopter des pratiques durables et en collaborant à tous les niveaux, les entreprises peuvent jouer un rôle crucial dans la construction d'un monde plus vert et plus juste pour tous.
+
+\paragraph{Conclusion}
+Ce chapitre a exploré l'intégration de la durabilité à différentes échelles dans le développement logiciel. Il est clair que l'ingénierie logicielle écologique ne se limite pas à une simple initiative, mais représente une transformation holistique de la culture et des pratiques au sein de la communauté des développeurs.
+
+\paragraph{Engagement individuel et responsabilité collective :} La durabilité logicielle commence par l'engagement de chaque développeur. En sensibilisant aux enjeux environnementaux et en diffusant les compétences et connaissances nécessaires, nous pouvons construire une culture de responsabilité partagée.
+
+\paragraph{Intégration au cœur du processus de développement :} La durabilité ne doit pas être une simple considération secondaire. Il est essentiel de l'intégrer dès le début du processus de développement, en adoptant des méthodologies et des outils adaptés, et en mesurant l'impact environnemental des logiciels.
+
+\paragraph{Collaboration et partage des connaissances :} La recherche et l'innovation sont essentielles pour faire progresser l'ingénierie logicielle écologique. La collaboration entre chercheurs, développeurs, praticiens et parties prenantes est indispensable pour partager les meilleures pratiques et développer des solutions durables.
+
+\paragraph{Adoption des méthodologies agiles :} Les méthodologies agiles, avec leur approche itérative et collaborative, offrent un cadre flexible pour l'intégration de la durabilité dans le développement logiciel.
+
+\paragraph{Alignement avec la stratégie d'entreprise :} L'intégration de la durabilité dans la stratégie de \acrshort{rse} d'une entreprise permet de renforcer l'engagement et de maximiser l'impact positif sur l'environnement et la société.
+
+
+En conclusion, l'ingénierie logicielle écologique est un voyage continu d'apprentissage et d'amélioration. En s'engageant à adopter des pratiques durables à tous les niveaux, la communauté des développeurs de logiciels peut jouer un rôle crucial dans la construction d'un avenir plus vert, plus juste et plus prospère pour tous.
+
